@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - prints a hexadecimal string
+ * main - prints if number is positive, zero, or negative
  *
- * Return: Always(Success)
+ * Description: using the main function
+ * this program prints "programming is positive, zero, or negative
+ * Return: 0
  */
 int main(void)
 {
