@@ -1,37 +1,44 @@
 #include <stdio.h>
 
 /**
- * main - print possible combo of 3
+ * main- Entry point
  *
- * Return: returns zero at the end
+ * Return: Always 0 (Success)
  */
 int main(void)
-{
-	int i, p, m;
 
-	for (i =0; i <= 9; i++)
+{
+	int left;
+	int right;
+	int center;
+
+	
+
+	for (left = 48; left <= 57; left++)
 	{
-		for (p =1; p <= 9; p++)
+		for (center = left + 1; center <= 57; center++)
 		{
-			for (m = 2; m <=9; m++)
+			for (right = center +1; right <= 57; right++)
+
+
 			{
-				if (m > p && p > i)
+				putchar(left);
+				putchar(center);
+				putchar(right);
+
+				if ((left == 55) && (center == left + 1) && (right == center + 1))
 				{
-					putchar(i + '0');
-					putchar(p + '0');
-					putchar(m + '0');
-					{
-						if (i != 7)
-						{
-							putchar(',');
-							putchar('');
-						}
-					}
+					break;
 				}
+
+				putchar(',');
+				putchar('');
+
 			}
 		}
 	}
-	
-	putchar('\n'); 
+
+	putchar('\n');
+
 	return (0);
 }
