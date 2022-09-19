@@ -1,31 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - prints if number is positive, zero, or negative
- *
- * Description: using the main function
- * this program prints "programming is positive, zero, or negative
- * Return: 0
+ *main -> assign a random number to the variable n each time it is executed
+ *and print the last digit of the number stored in the variable n
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-        char c;
+char ch;
+int n;
 
-        for(c = '0'; c <= '9'; c++)
+for (n = 48; n <= 57; n++)
+{
 
-        {
-                putchar(c);
-        }
+putchar(n);
+}
+for (ch = 'a'; ch <= 'f'; ch++)
+{
 
-        for(c = 'a'; c <= 'f'; c++)
-        
-	{
-                putchar(c);
-        }
-
-        putchar('\n');
-
-	return (0);
+putchar(ch);
 }
 
+putchar(10);
 
+return (0);
+}
