@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints a series of numbers with commas
- * 
- * Return: Always(Success);
+ *main -> assign a random number to the variable n each time it is executed
+ *and print the last digit of the number stored in the variable n
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c;
+int ch;
+for (ch = 48; ch <= 57; ch++)
+{
 
-	for (c = '0'; c <= '9'; c++)
-	{
-		putchar(c);
+putchar(ch);
+if (ch != 57)
+{
+putchar(44);
+putchar(32);
+}
+}
 
-		if (c != '9')
-		{
-			putchar(',');
-			putchar('');
-		}
-	}
+putchar(10); /* this is an ascii code for new line*/
 
-	putchar('\n');
-
-	return (0);
+return (0);
 }
